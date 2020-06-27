@@ -257,9 +257,21 @@ console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(arr, str) {
+  ArtGreater100 = 0;
+  // for (let i = 0; i < artists.length; i++) {
+  //     const Total = artists.paintings;
+  //     ArtGreater100 += Total
+  // }
+  // return ArtGreater100
+  const newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].years > "1900") newArray.push(arr[i].name);
+  }
+  return newArray;
 }
+
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -271,6 +283,7 @@ function get20s(/* Code here */) {
  *
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
+
 function removeArtist(array, index) {
   array.splice(index, 0);
   return array[index];
@@ -291,32 +304,32 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-const addArtist = function (newArray) {
-    let NArray = {
-        id: 20,
-        name: "Alex Andrew Mallory",
-        years: "1992 - 2020",
-        genre: "Web Design",
-        nationality: "American",
-        bio: "Creative, full of knowledge, kind, and generous. soft spoken and a student at Lambda School"
-    }
-    newArray.push(NArray);
-}
-
-// function addArtist(array) {
-//     return array.push({
-//         "id": 21,
-//         "name": "Alex Andrew Mallory",
-//         "years": "1992 - 2020",
-//         "genre": "Web Design",
-//         "nationality": "American",
-//         "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-//     })
-
+// const addArtist = function (newArray) {
+//     let NArray = {
+//         id: 20,
+//         name: "Alex Andrew Mallory",
+//         years: "1992 - 2020",
+//         genre: "Web Design",
+//         nationality: "American",
+//         bio: "Creative, full of knowledge, kind, and generous. soft spoken and a student at Lambda School"
+//     }
+//     newArray.push(NArray);
 // }
 
-addArtist(artists)
-console.log(artists)
+function addArtist(array) {
+  return array.push({
+    id: 21,
+    name: "Alex Andrew Mallory",
+    years: "1992 - 2020",
+    genre: "Web Design",
+    nationality: "American",
+    bio:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  });
+}
+
+addArtist(artists);
+console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -326,9 +339,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(array) {
+  ArtGreater100 = 0;
+
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) newArray.push(array[i].name);
+  }
+  return newArray;
 }
+console.log("he");
+console.log(lotsOfArt(artists));
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
