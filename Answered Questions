@@ -2,18 +2,27 @@
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
 
+        accessibility would be the use of all content on the web page that is accessible to any one who might need to see better and to use the web page with ease. it needs to be fully responsive to meet the needs of anyone from any disablilty.
 
+        a web page would need the content to shrink or expand for those that need to see better and or to navigate the page easily.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
+        adding Percentages to some content will either expand or shrink according to the parent element at breakpoint or zoom on a page. works great for picture and other content.
 
+        adding rem to texts will allow text to grow or shrink for when people need to zoom on a page for closer look at the possible small text, or if text is too large.
 
+        adding em to child elements such as a nav button menu, that drops down or shows up for the navigation <a> tags, mostly found on mobile sites, but can be easily used for tablet, desktop and even 4k screen sizes. i find it useful to utilize the em, that way it scales according to the size of the nav button menu with out it being too big when someone touches or clicks on the menu button. but it could also be scaled to zoom in or shrink if some one needs to see the links bigger.
 
 3. How would you explain the concept of a variable to someone new to programming?
 
+        variables vary, reason why they are called variables, you can name variables. think of a box with one item in it. can be replaced with something else over time.
 
+            you can give a variable a value using "=" it is more of an assignement.
 
 
 4. What is the purpose of using functions in code?
+
+        makes our life easier to write the code in the function once, and call upon it from many places
