@@ -348,7 +348,7 @@ function lotsOfArt(array) {
   }
   return newArray;
 }
-console.log("he");
+
 console.log(lotsOfArt(artists));
 lotsOfArt(artists);
 
